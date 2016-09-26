@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="5770" started-at="2016-09-26T17:18:30Z" finished-at="2016-09-26T17:18:36Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="5770" started-at="2016-09-26T17:18:30Z" finished-at="2016-09-26T17:18:36Z">
+      <class name="tests.RegisterTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.RegisterTest@1794d431]" name="beforeTest" is-config="true" duration-ms="6" started-at="2016-09-26T11:18:30Z" finished-at="2016-09-26T11:18:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.RegisterTest@1794d431]" name="beforeClass" is-config="true" duration-ms="0" started-at="2016-09-26T11:18:30Z" finished-at="2016-09-26T11:18:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.RegisterTest@1794d431]" name="setUp" is-config="true" duration-ms="4889" started-at="2016-09-26T11:18:30Z" finished-at="2016-09-26T11:18:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testRegisterPage()[pri:0, instance:tests.RegisterTest@1794d431]" name="testRegisterPage" duration-ms="537" started-at="2016-09-26T11:18:35Z" finished-at="2016-09-26T11:18:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterPage -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.RegisterTest@1794d431]" name="afterMethod" is-config="true" duration-ms="324" started-at="2016-09-26T11:18:36Z" finished-at="2016-09-26T11:18:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.RegisterTest@1794d431]" name="afterClass" is-config="true" duration-ms="0" started-at="2016-09-26T11:18:36Z" finished-at="2016-09-26T11:18:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.RegisterTest@1794d431]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-09-26T11:18:36Z" finished-at="2016-09-26T11:18:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tests.RegisterTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
