@@ -14,8 +14,13 @@ public class BasePage {
 		this.driver = driver;
 	}
 	
-	public void clickOnElement(String locator){
-		driver.findElement(By.id(locator)).click();
+	public Boolean clickOnElement(String locator){
+		try {
+			driver.findElement(By.id(locator)).click();
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
 	}
 	public void typeOnElement(String locator, String text){
 		driver.findElement(By.id(locator)).clear();

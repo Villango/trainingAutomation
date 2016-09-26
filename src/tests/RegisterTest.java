@@ -54,7 +54,9 @@ public class RegisterTest {
 		String pageTitle = "";
 
 		// Click the Register link
-		base.clickOnElement("ctl00_LoginView_RegisterLink");
+		
+		assertTrue("Element not found.", base.clickOnElement("ctl00_LoginView_RegisterLink"));
+		
 		pageTitle = driver.getTitle();
 
 		// Verification.
