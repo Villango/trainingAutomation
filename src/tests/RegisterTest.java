@@ -1,42 +1,24 @@
 package tests;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import static org.junit.Assert.assertTrue;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
+
+import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import pageObjects.BasePage;
 
-public class RegisterTest {
-	// Variables
-	private WebDriver driver;
+public class RegisterTest extends BaseTest{
 	private String baseUrl;
 	private BasePage base;
 	// private boolean acceptNextAlert = true;
-	
-	@BeforeTest
-	public void beforeTest() {
-		System.out.println("Starting Execution");
-	}
-	
-	@BeforeClass
-	public void beforeClass(){
-		System.out.println("Executing LogInTest Class");
-	}
 	
 	@BeforeMethod
 	// Setting Up everything we will use.
 	public void setUp() throws Exception {
 		System.out.println("Creating Driver");
 		// New instance of a driver
-		driver = new FirefoxDriver();
+		driver = this.createLocalDriver("firefox");
 		// baseURL given to test
 		baseUrl = "http://192.168.0.103:86/";
 		// Set the timeout time
@@ -181,20 +163,4 @@ public class RegisterTest {
 
 	}
 
-	// Closing the browser
-	@AfterMethod
-	public void afterMethod() {
-		System.out.println("Deleting Driver");
-		driver.quit();
-	}
-	
-	@AfterClass
-	public void afterClass() {
-		System.out.println("Completing execution of RegisterTests Class");
-	}
-	
-	@AfterTest
-	public void afterTest() {
-		System.out.println("Completing Execution");
-	}
 }
