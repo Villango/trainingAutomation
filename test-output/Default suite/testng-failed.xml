@@ -3,17 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="tests.RegisterTest">
+      <class name="tests.LoginTest">
         <methods>
-          <include name="afterClass"/>
-          <include name="testRegisterPage"/>
-          <include name="afterTest"/>
+          <include name="testSuccessfulLogin"/>
           <include name="beforeTest"/>
-          <include name="setUp"/>
-          <include name="afterMethod"/>
           <include name="beforeClass"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- tests.RegisterTest -->
+      </class> <!-- tests.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
